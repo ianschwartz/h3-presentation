@@ -7,5 +7,5 @@ export default function Link(props) {
     window.dispatchEvent(new window.PopStateEvent('popstate'));
   };
 
-  return <a href={props.to} onClick={onClick}>{props.children}</a>
+  return <a className={props.className} href={props.to} onClick={onClick}>{props.children}</a>
 }

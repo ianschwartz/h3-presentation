@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import One from "./pages/one";
+import Aboutme from "./pages/aboutme";
 import Home from "./pages/home";
 import NotFound from "./pages/notFound";
+import Link from "./components/nav/link";
 
 function router(props) {
   const { path } = props;
   switch (path) {
     case '/':
       return <Home />;
-    case '/one':
-      return <One />
+    case '/aboutme':
+      return <Aboutme />;
     default:
       return <NotFound path={props.path}/>;
   }
@@ -18,9 +19,11 @@ function router(props) {
 
 function App(props) {
   return (
-    <div className="App">
-      <h1>Using UberH3 on the Front End</h1>
-      {router(props)}
+    <div className="containers">
+      <div className="nes-container with-title is-centered">
+        <Link to="/" className="title">Using UberH3 on the Front End</Link>
+        {router(props)}
+      </div>
     </div>
   );
 }

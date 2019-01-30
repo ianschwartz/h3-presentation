@@ -20,13 +20,16 @@ const Home = (props) => {
     <p>
       Superpedestrian is a transportation robotics company located in Cambridge, Mass. Founded out of MIT and beginning operations in 2013, Superpedestrian develops core technologies for micro-mobility.
     </p>
-    <MapView
-      features={features}
-      initialZoom={12}
-      boundaries={[[42.3623, -71.1126], [42.3568, -71.1043]]}
-      autoOpen
-    />
-    <Link to={'/one'}>One</Link>
+      <MapView
+        features={features}
+        initialZoom={12}
+        boundaries={[[42.3623, -71.1126], [42.3568, -71.1043]]}
+        autoOpen
+      >
+      <div className="flex-column">
+        <Link to={'/aboutme'} className="nes-btn" type="button">About Ian Schwartz</Link>
+      </div>
+      </MapView>
   </div>)
 };
 export default Home;

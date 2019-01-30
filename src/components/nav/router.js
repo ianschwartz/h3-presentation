@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "../../App";
 import NotFound from "../../pages/notFound";
-import One from "../../pages/one";
+import Aboutme from "../../pages/aboutme";
 
 export function router(props) {
   const { path } = props;
@@ -10,7 +10,7 @@ export function router(props) {
     case '/':
       return <Home />;
     case '/one':
-      return <One />
+      return <Aboutme />
     default:
       return <NotFound path={props.path}/>;
   }

@@ -12,7 +12,7 @@
   align-items: center;
   position: relative;
   top: -2px;
-  left: -12px;
+  left: -9px;
 }
 .sp-inner-icon {
   background: red;
@@ -20,4 +20,24 @@
   height: 15px;
   width: 15px;
   margin: 5px;
+}
+
+.map-view {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.is-list {
+  list-style: square outside url('./images/coin.png');
 }

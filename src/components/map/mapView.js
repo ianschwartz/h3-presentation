@@ -91,7 +91,12 @@ export class MapView extends React.Component {
       border: 'none',
       width: '100%',
     };
-    return <div id={this.props.mapId} style={style} />;
+    return (<div className="nes-container map-view">
+      <div className="nes-container is-dark">{this.props.children}</div>
+      <div className="nes-container" style={{ width: this.props.width }}>
+        <div id={this.props.mapId} style={style} />
+      </div>
+    </div>);
   }
 }
 
