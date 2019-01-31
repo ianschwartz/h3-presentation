@@ -41,3 +41,13 @@
 .is-list {
   list-style: square outside url('./images/coin.png');
 }
+
+.bottom-buttons {
+  position: absolute;
+  bottom: 10px;
+}
+
+.slide-text {
+  width: 400px;
+  text-align: left;
+}

@@ -13,7 +13,12 @@ const Aboutme = (props) => {
           <li>Terrible at skateboarding</li>
           <li>Bad jokes delivered loudly</li>
         </ul>
-        <Link className="nes-btn is-primary">About Uber H3</Link>
+        <div>
+          Twitter: @ianschwartz<br />
+          Website: https://schwartz.world<br />
+          Email: ian@schwartz.world
+        </div>
+        <div><Link to="/about-h3" className="nes-btn is-primary">About Uber H3</Link></div>
       </div>
       <div className="nes-container with-title is-dark">
         <h3 className="title">Maddie</h3>
