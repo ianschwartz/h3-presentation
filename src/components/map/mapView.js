@@ -91,8 +91,9 @@ export class MapView extends React.Component {
       border: 'none',
       width: '100%',
     };
-    return (<div className="map-view">
-      <div className="nes-container is-dark">{this.props.children}</div>
+    const className = this.props.title ? "map-view with-title" : 'map-view';
+    return (<div className={className}>
+      <div className="nes-container">{this.props.children}</div>
       <div className="nes-container" style={{ width: this.props.width }}>
         <div id={this.props.mapId} style={style} />
       </div>
@@ -125,7 +126,7 @@ MapView.defaultProps = {
   width: '100%',
   initialZoom: 11,
   autoOpen: false,
-  attribution: 'Funny stuff here'
+  attribution: 'Funny stuff here',
 };
 
 export default MapView;

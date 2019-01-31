@@ -4223,6 +4223,11 @@ h2x-types@^1.1.0:
   resolved "https://registry.yarnpkg.com/h2x-types/-/h2x-types-1.1.0.tgz#ec0d5e3674e2207269f32976ac9c82aaff4818e6"
   integrity sha512-QdH5qfLcdF209UsCdM0ZNZ9Dwm2PHvMfeLZtivBrjX3Y/df4US2pwsUC4HBfWhye/mx/t6puODeC7Oacb/Ol8g==
 
+h3-js@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/h3-js/-/h3-js-3.4.1.tgz#5a1b8006311220b1c202f466bb59e4a10ac65497"
+  integrity sha512-4H5cA+/pp8gqHt9XgqMX9Kah18pFKsgbxxV8VN/eT0adyzX7LChZPM4hTX6gPXfto+fT1otceWcutHP+cz8Y1w==
+
 handle-thing@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
