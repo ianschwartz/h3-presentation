@@ -93,7 +93,8 @@ export class MapView extends React.Component {
     };
     const className = this.props.title ? "map-view with-title" : 'map-view';
     return (<div className={className}>
-      <div className="nes-container">{this.props.children}</div>
+      {this.props.children &&
+        <div className="nes-container">{this.props.children}</div>}
       <div className="nes-container" style={{ width: this.props.width }}>
         <div id={this.props.mapId} style={style} />
       </div>

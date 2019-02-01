@@ -79,3 +79,13 @@ pre {
   padding: 5px;
   width: 100%;
 }
+
+.mountains {
+  background-image: url('./images/mountains.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

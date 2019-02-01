@@ -2,7 +2,9 @@ import React from 'react';
 import Link from "../components/nav/link";
 import MapView from "../components/map/mapView";
 import * as L from 'leaflet';
-import block from '../images/ex-block.png';
+import wheel from '../images/wheel.png';
+import bike from '../images/bike.png';
+
 const AboutSP = (props) => {
   const spInfo = `<div>84 Hamilton St, Cambridge, MA 02139
 </div>`;
@@ -13,8 +15,9 @@ const AboutSP = (props) => {
   });
   const superpedestrian = L.marker([42.3581, -71.1085], {
     icon: L.icon({
-      iconUrl: block,
-      iconAnchor: [11, 5]
+      iconUrl: wheel,
+      iconSize: [55, 50],
+      iconAnchor: [27, 5]
     })
   });
   superpedestrian.bindPopup(spInfo);
@@ -27,13 +30,14 @@ const AboutSP = (props) => {
       <MapView
         features={features}
         initialZoom={12}
-        boundaries={[[42.3623, -71.1126], [42.3568, -71.1043]]}
+        boundaries={[[42.3581, -71.1105], [42.3581, -71.0905]]}
         autoOpen
       >
-      <div className="flex-column">
-        <Link to={'/aboutme'} className="nes-btn" type="button">About Ian Schwartz</Link>
-      </div>
+        <img src={bike} alt=""/>
       </MapView>
+    <div className="bottom-buttons">
+      <Link to={'/aboutme'} className="nes-btn" type="button">About Ian Schwartz</Link>
+    </div>
   </div>)
 };
 export default AboutSP;

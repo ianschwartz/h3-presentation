@@ -43,8 +43,7 @@ export default class Chloropleth extends React.Component {
   generateButtons = () => {
     const resolutions = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
     return resolutions.map(r => {
-      const className = r === this.state.resolution ? 'nes-btn is-success' : 'nes-btn'
-      return <button className={className} value={r} onClick={this.setResolution}>
+      return <button className='nes-btn' value={r} onClick={this.setResolution}>
         {r}
       </button>
     })
@@ -54,7 +53,11 @@ export default class Chloropleth extends React.Component {
     const hexes = bucketLights(this.props.data, this.state.resolution);
     const features = [this.renderHexes(hexes)];
     return (<div>
-      <MapView features={features} boundaries={features[0].getBounds()}>
+      <MapView
+        features={features}
+        boundaries={features[0].getBounds()}
+        attribution='Click a hex to see how many lights are in it'
+      >
         <h3>Bucketing the Lights by Hex</h3>
         <pre>
           <code>
@@ -69,7 +72,7 @@ export default class Chloropleth extends React.Component {
           style={{ marginBottom: 20 }}
         >
           <div className="title">Output</div>
-          <div style={{ height: 350, width: 800, overflow: 'scroll' }}>
+          <div style={{ height: 350, width: 800, overflowY: 'scroll' }}>
             <pre>
               <code>
                 {JSON.stringify(hexes, null, 2)}
@@ -77,8 +80,11 @@ export default class Chloropleth extends React.Component {
             </pre>
           </div>
         </div>
-        <div className="bottom-buttons">
-          <Link className="nes-btn" to={'/'}>hi</Link>
+        <div
+          className="bottom-buttons"
+         style={{ background: 'darkgreen', color: 'white', padding: 10 }}
+        >
+          <Link className="nes-btn" to={'/'}>next</Link>
         </div>
       </MapView>
     </div>)

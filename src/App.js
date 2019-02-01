@@ -8,11 +8,14 @@ import TheChallenge from "./pages/theChallenge";
 import MyHex from "./pages/myHex";
 import {trafficLights} from "./data/trafficLIghts";
 import Chloropleth from "./pages/chloropleth";
+import {Home} from "./pages/home";
 
 function router(props) {
   const { path } = props;
   switch (path) {
     case '/':
+      return <Home />
+    case '/about-sp':
       return <AboutSP />;
     case '/aboutme':
       return <Aboutme />;
