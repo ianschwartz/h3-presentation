@@ -3,6 +3,8 @@ import MapView from "../components/map/mapView";
 import * as L from 'leaflet';
 import koopa from '../images/koopa.gif'
 import h3 from 'h3-js';
+import ReactSwitch from "react-switch";
+import Link from "../components/nav/link";
 
 const resolutions = [
   {
@@ -88,11 +90,33 @@ const resolutions = [
 ];
 
 export default class MyHex extends React.Component {
-  state = { location: null, res: 6 };
+  state = { location: null, res: 0, checked: false };
+
   getLocation = () => navigator.geolocation.getCurrentPosition((position) => {
     this.setState({ location: [position.coords.latitude, position.coords.longitude] })
   });
+
+  renderKRing = (location, hex) => {
+    const kRing = h3.kRing(hex, 2);
+    return kRing.map(cell => {
+      const color = cell === hex ? 'red' : 'green';
+      return L.polygon(h3.h3ToGeoBoundary(cell), {color});
+    }).concat(L.marker(location, {
+      icon: L.icon({
+        iconUrl: koopa,
+        iconSize: [50, 50],
+      })
+    }))
+  };
+
   renderFeatures = (location, hex) => {
+    if (this.state.checked) {
+      return this.renderKRing(location, hex);
+    }
+    return this.renderSingleHex(location, hex);
+  }
+
+  renderSingleHex = (location, hex) => {
     if (location) {
       const marker = L.marker(location, {
         icon: L.icon({
@@ -109,23 +133,37 @@ export default class MyHex extends React.Component {
       return [marker, hexGeo]
     }
     return [];
-  }
+  };
+
+  handleSwitch = (checked) => {
+    this.setState({ checked });
+  };
+
   setRes = (e) => {
     this.setState({ res: e.target.value })
   };
+
   renderButtons = () => {
     const reses = [0,1,2,3,4,5,6,7,8,10,11,12,13,14,15];
     return reses.map(num => {
       const active = num === this.state.res;
       const className = active ? 'nes-btn is-success' : 'nes-btn';
-      return <button key={num.toString()} className={className} onClick={this.setRes} value={num}>{num}</button>
+      return (<button
+        key={num.toString()}
+        className={className}
+        onClick={this.setRes}
+        value={num}>
+          {num}
+      </button>)
     })
   };
+
   formatIndices = (numbers) => {
     const nums = numbers.toString();
     if (nums[1] === '.') return nums;
     return nums.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
+  };
+
   render() {
     let hex;
     if (!this.state.location) {
@@ -133,6 +171,7 @@ export default class MyHex extends React.Component {
     } else {
       hex = h3.geoToH3(this.state.location[0], this.state.location[1], this.state.res)
     }
+    const mode = this.state.checked ? 'radius' : 'single hex';
     const res = resolutions[this.state.res];
     const features = this.renderFeatures(this.state.location, hex);
     const boundaries = features[1] ? features[1].getBounds() : [[42.2, -71.15], [42.3, -72]];
@@ -148,6 +187,19 @@ export default class MyHex extends React.Component {
           <p>Number of unique indices:<br/>
             {this.formatIndices(res.indices)}
           </p>
+          <p>
+            <small>{mode}</small><br />
+            <label htmlFor="hex-switch">
+              <ReactSwitch
+                onChange={this.handleSwitch}
+                checked={this.state.checked}
+                id="hex-switch"
+              />
+            </label>
+          </p>
+        </div>
+        <div className="bottom-buttons">
+          <Link className="nes-btn" to="/chloropleth">next</Link>
         </div>
       </MapView>
     </div>)

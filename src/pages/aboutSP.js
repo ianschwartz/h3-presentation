@@ -3,7 +3,7 @@ import Link from "../components/nav/link";
 import MapView from "../components/map/mapView";
 import * as L from 'leaflet';
 import block from '../images/ex-block.png';
-const Home = (props) => {
+const AboutSP = (props) => {
   const spInfo = `<div>84 Hamilton St, Cambridge, MA 02139
 </div>`;
   const spIcon=  L.divIcon({
@@ -36,4 +36,4 @@ const Home = (props) => {
       </MapView>
   </div>)
 };
-export default Home;
+export default AboutSP;

@@ -122,7 +122,7 @@ MapView.defaultProps = {
   mapId: 'mapId',
   boundaries: [[42.36, -71.17], [42.25, -71.04]],
   features: [],
-  height: 500,
+  height: 600,
   width: '100%',
   initialZoom: 11,
   autoOpen: false,
