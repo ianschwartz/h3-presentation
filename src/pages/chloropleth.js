@@ -84,7 +84,7 @@ export default class Chloropleth extends React.Component {
           className="bottom-buttons"
          style={{ background: 'darkgreen', color: 'white', padding: 10 }}
         >
-          <Link className="nes-btn" to={'/'}>next</Link>
+          <Link className="nes-btn" to={'/collision-detection'}>next</Link>
         </div>
       </MapView>
     </div>)

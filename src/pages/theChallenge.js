@@ -35,7 +35,7 @@ class TheChallenge extends Component {
           parts of Boston have the most traffic lights...
         </div>),
         (<div>
-          <img src={chlMap} style={{maxWidth: '90%', margin: 'auto'}}/>
+          <img alt='map' src={chlMap} style={{maxWidth: '90%', margin: 'auto'}}/>
         </div>),
         (<div>
           Can you do it?
@@ -54,9 +54,9 @@ class TheChallenge extends Component {
       <h2 className="title">{this.slide.title}</h2>
       <MapView width="100%" features={features} initialZoom={9}>
         <div className="old-man">
-          <img src={fire} className="avatar" />
-          <img src={oldMan} className="avatar" />
-          <img src={fire} className="avatar" />
+          <img alt='fire' src={fire} className="avatar" />
+          <img alt='avatar' src={oldMan} className="avatar" />
+          <img alt='fire' src={fire} className="avatar" />
         </div>
         <div className="nes-container slide-text">
           {this.slide.body[this.state.oldManText]}<br />
@@ -64,7 +64,7 @@ class TheChallenge extends Component {
           <button className="nes-btn is-success" onClick={this.moreText}>click to continue</button>}
         </div>
         <div className="bottom-buttons">
-          <Link className="nes-btn is-primary" to="/my-hex">{this.slide.buttonText}</Link>
+          <Link className="nes-btn is-primary" to="/where-am-i">{this.slide.buttonText}</Link>
           <button className="nes-btn is-error">Go back</button>
         </div>
       </MapView>

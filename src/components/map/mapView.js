@@ -95,11 +95,11 @@ export class MapView extends React.Component {
     return (<div className={className}>
       {this.props.children &&
         <div className="nes-container">{this.props.children}</div>}
-      <div className="nes-container" style={{ width: this.props.width }}>
-        <div id={this.props.mapId} style={style} />
-      </div>
-    </div>);
-  }
+          <div className="nes-container" style={{ width: this.props.width }}>
+          <div id={this.props.mapId} style={style} />
+        </div>
+      </div>);
+    }
 }
 
 MapView.propTypes = {
@@ -117,6 +117,7 @@ MapView.propTypes = {
   ]),
   initialZoom: PropTypes.number,
   autoOpen: PropTypes.bool,
+  title: PropTypes.string,
 };
 
 MapView.defaultProps = {
@@ -128,6 +129,7 @@ MapView.defaultProps = {
   initialZoom: 11,
   autoOpen: false,
   attribution: 'Funny stuff here',
+  title: null,
 };
 
 export default MapView;
