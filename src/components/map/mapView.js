@@ -1,6 +1,7 @@
 import React from 'react';
 import 'leaflet';
 import PropTypes from 'prop-types';
+import 'leaflet.pm'
 /* global L */
 
 /*
@@ -36,6 +37,27 @@ export class MapView extends React.Component {
     if (this.props.autoOpen) {
       this.allLayers.eachLayer(layer => layer.openPopup());
     }
+    if (this.props.drawable || this.props.markerDroppable) {
+      this.map.pm.addControls({
+        position: 'topleft',
+        drawMarker: this.props.markerDroppable, // adds button to draw markers
+        drawPolyline: false, // adds button to draw a polyline
+        drawRectangle: false, // adds button to draw a rectangle
+        drawPolygon: this.props.drawable, // adds button to draw a polygon
+        drawCircle: false, // adds button to draw a cricle
+        cutPolygon: false, // adds button to cut a hole in a polygon
+        editMode: false, // adds button to toggle edit mode for all layers
+        removalMode: false, // adds a button to remove layers      });
+      });
+      this.map.on('pm:create', (e) => {
+        if (e.shape !== 'Marker') {
+          this.props.afterDrawPolygon(e); // the name of the shape being drawn (i.e. 'Circle')
+        } else {
+          this.props.dropMarker(e);
+        }
+      });
+    }
+
   }
 
   componentDidUpdate() {
@@ -118,6 +140,10 @@ MapView.propTypes = {
   initialZoom: PropTypes.number,
   autoOpen: PropTypes.bool,
   title: PropTypes.string,
+  drawable: PropTypes.bool,
+  markerDroppable: PropTypes.bool,
+  afterDrawPolygon: PropTypes.func,
+  dropMarker: PropTypes.func,
 };
 
 MapView.defaultProps = {
@@ -130,6 +156,10 @@ MapView.defaultProps = {
   autoOpen: false,
   attribution: 'Funny stuff here',
   title: null,
+  drawable: null,
+  markerDroppable: null,
+  afterDrawPolygon: null,
+  dropMarker: null
 };
 
 export default MapView;

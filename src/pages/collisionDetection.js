@@ -13,7 +13,7 @@ class CollisionDetection extends Component {
   state = {
     lat: -71.17,
     lon: 42.2,
-    softWalls: true
+    softWalls: false
   }
 
   componentDidMount() {
@@ -99,13 +99,30 @@ class CollisionDetection extends Component {
     const hexesVisualized = h3.h3SetToMultiPolygon(hexes, true)
     const features = [marker, L.polygon(hexesVisualized), myHexPoly];
 
-    return (<div className="nes-container">
-      <MapView features={features} boundaries={mass.getBounds()} />
-      <div className='item'>
-        <label>
-          <input className='nes-checkbox' type="checkbox" checked={!this.state.softWalls} onChange={this.toggleSoftwalls} />
-          <span>Hard Walls</span>
-        </label>
+    return (<div className="nes-container" style={{
+      display: 'flex',
+    }}>
+      <div style={{ width: '30%', overflow: 'scroll' }}>
+        Hexes in the state of MA
+      <small style={{ display: 'block' }}>(resolution 6)</small>
+        {hexes.map(hex => {
+          const style = { fontSize: 7, fontFamily: 'Arial' };
+          if (hex === myHex) {
+            style.color = 'red';
+          }
+          return <small style={style}>{hex}, </small>})
+        }
+      </div>
+      <div style={{ width: '70%' }}>
+        <MapView features={features} boundaries={mass.getBounds()} />
+        <small>use arrow keys to navigate</small>
+        <div className='item'>
+          <label>
+            <input className='nes-checkbox' type="checkbox" checked={!this.state.softWalls} onChange={this.toggleSoftwalls} />
+            <span style={{ display: 'block' }}>Hard Walls</span>
+            <Link to='/point-in-polygon' className="nes-btn">Next</Link>
+          </label>
+        </div>
       </div>
     </div>)
   }

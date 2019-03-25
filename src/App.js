@@ -11,12 +11,17 @@ import Chloropleth from "./pages/chloropleth";
 import {Home} from "./pages/home";
 import WhereAmI from "./pages/whereAmI";
 import CollisionDetection from "./pages/collisionDetection";
+import PointInPolygon from "./pages/pointInPolygon";
+import {WhyHexes} from "./pages/whyHexes";
+import H3Line from "./pages/h3line";
+import Compact from "./pages/compact";
+import {TheEnd} from "./pages/theEnd";
 
 function router(props) {
   const { path } = props;
   switch (path) {
     case '/':
-      return <Home />
+      return <Home />;
     case '/about-sp':
       return <AboutSP />;
     case '/aboutme':
@@ -24,13 +29,23 @@ function router(props) {
     case '/quest':
       return <TheChallenge data={trafficLights} />;
     case '/my-hex':
-      return <MyHex />
+      return <MyHex />;
     case '/chloropleth':
       return <Chloropleth  data={trafficLights} />;
     case '/where-am-i':
-      return <WhereAmI />
+      return <WhereAmI />;
     case '/collision-detection':
-      return <CollisionDetection />
+      return <CollisionDetection />;
+    case '/point-in-polygon':
+      return <PointInPolygon data={trafficLights} />;
+    case '/why-hexes':
+      return <WhyHexes />;
+    case '/routing':
+      return <H3Line />;
+    case '/compact':
+      return <Compact />;
+    case '/the-end':
+      return <TheEnd />;
     default:
       return <NotFound path={props.path}/>;
   }

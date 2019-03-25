@@ -11,14 +11,14 @@ const Aboutme = (props) => {
           <li>Framework of choice: ReactJS</li>
           <li>Proud parent and dog owner</li>
           <li>Terrible at skateboarding</li>
-          <li>Bad jokes delivered loudly</li>
+          <li>Bad takes delivered loudly</li>
         </ul>
         <div>
           Twitter: @ianschwartz<br />
           Website: https://schwartz.world<br />
           Email: ian@schwartz.world
         </div>
-        <div><Link to="/quest" className="nes-btn is-primary">About Uber H3</Link></div>
+        <div><Link to="/quest" className="nes-btn is-primary">Working with Geospatial Data</Link></div>
       </div>
       <div className="nes-container with-title is-dark">
         <h3 className="title">Maddie</h3>

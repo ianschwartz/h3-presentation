@@ -61,7 +61,7 @@ class WhereAmI extends Component {
         <li>{formatText(this.state.location)}</li>
         {listItems}
       </ul>
-      <Link to='/my-hex' className='nes-btn'>next</Link>
+      <Link to='/why-hexes' className='nes-btn'>next</Link>
       {this.locationLayer &&
       <MapView
         features={[this.locationLayer]}
