@@ -119,3 +119,7 @@ pre {
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
+
+.fullsize {
+  height: 90vh;
+}

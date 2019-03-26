@@ -176,7 +176,7 @@ export default class MyHex extends React.Component {
     const res = resolutions[this.state.res];
     const features = this.renderFeatures(this.state.location, hex);
     const boundaries = features[1] ? features[1].getBounds() : [[42.2, -71.15], [42.3, -72]];
-    return (<div>
+    return (<div className='fullsize'>
       <MapView features={features} boundaries={boundaries}>
         <h3>{hex}</h3>
         <div>

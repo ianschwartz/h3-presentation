@@ -12,6 +12,9 @@ export class Home extends React.Component {
       <div>
         <Link className='nes-btn is-primary' to={'/about-sp'}>START</Link>
       </div>
+      <div>
+        <a href="https://h3.schwartz.world">Follow along at https://h3.schwartz.world</a>
+      </div>
       <CodeLink url='https://github.com/ianschwartz/h3-presentation'/>
     </div>)
   }

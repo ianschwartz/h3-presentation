@@ -51,7 +51,7 @@ class TheChallenge extends Component {
 
   render() {
     const features = this.state.lights;
-    return (<div className="nes-container with-title">
+    return (<div className="nes-container with-title fullsize">
       <h2 className="title">{this.slide.title}</h2>
       <MapView width="100%" features={features} initialZoom={9}>
         <div className="old-man">

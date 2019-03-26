@@ -3,7 +3,7 @@ import maddie from '../images/maddie.jpg';
 import Link from "../components/nav/link";
 import {CodeLink} from "../components/codeLink";
 const Aboutme = (props) => {
-  return(<div className="nes-container with-title is-dark">
+  return(<div className="nes-container with-title is-dark fullsize">
     <h2 className="title">About Ian Schwartz</h2>
     <div className="space-around">
       <div className="lists flex-column" style={{ textAlign: 'left' }}>

@@ -27,7 +27,7 @@ const AboutSP = (props) => {
     <h2>About Superpedestrian</h2>
     <p style={{ maxWidth: 800, margin: 'auto' }}>
       Originally known for the Copenhagen Wheel, a self-contained rear wheel electric bicycle system which transforms a traditional bicycle into a hybrid e-bike, Superpedestrian has shifted its focus to shared micromobility. <a
-      href="https://www.superpedestrian.com/en/press">We are developing a durable scooter for ridesharing along with server-side infrastructure to support fleets of any size.</a>
+      href="https://www.superpedestrian.com/en/press">We offer durable scooters and e-bikes for ridesharing along with serverside infrastructure to support fleets of any size.</a>
     </p>
       <MapView
         features={features}

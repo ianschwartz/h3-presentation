@@ -54,7 +54,7 @@ function router(props) {
 function App(props) {
   return (
     <div className="containers" id="root">
-      <div className="nes-container with-title is-centered" style={{ height: '100%' }}>
+      <div className="nes-container with-title is-centered" style={{ height: '100vh' }}>
         <Link to="/" className="title">Using UberH3 on the Front End</Link>
         {router(props)}
       </div>

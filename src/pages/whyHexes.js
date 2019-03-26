@@ -4,7 +4,7 @@ import {CodeLink} from "../components/codeLink";
 
 export class WhyHexes extends React.Component {
   render() {
-    return (<div className='nes-container with-title'>
+    return (<div className='nes-container with-title fullsize'>
       <h2 className="title">Why Hexagons?</h2>
       <div style={{ display: 'flex', justifyContent: 'space-evenly'}}>
         <div style={{textAlign: 'left'}}>
