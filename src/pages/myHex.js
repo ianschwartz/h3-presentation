@@ -5,6 +5,7 @@ import koopa from '../images/koopa.gif'
 import h3 from 'h3-js';
 import ReactSwitch from "react-switch";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 const resolutions = [
   {
@@ -202,6 +203,7 @@ export default class MyHex extends React.Component {
           <Link className="nes-btn" to="/chloropleth">next</Link>
         </div>
       </MapView>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/myHex.js"/>
     </div>)
   }
 }

@@ -4,6 +4,7 @@ import MapView from "../components/map/mapView";
 import * as L from 'leaflet';
 import wheel from '../images/wheel.png';
 import bike from '../images/bike.png';
+import {CodeLink} from "../components/codeLink";
 
 const AboutSP = (props) => {
   const spInfo = `<div>84 Hamilton St, Cambridge, MA 02139
@@ -24,8 +25,9 @@ const AboutSP = (props) => {
   const features = [superpedestrian]
   return(<div>
     <h2>About Superpedestrian</h2>
-    <p style={{ maxWidth: 600, margin: 'auto' }}>
-      Superpedestrian is a transportation robotics company located in Cambridge, Mass. Founded out of MIT and beginning operations in 2013, Superpedestrian develops core technologies for micro-mobility.
+    <p style={{ maxWidth: 800, margin: 'auto' }}>
+      Originally known for the Copenhagen Wheel, a self-contained rear wheel electric bicycle system which transforms a traditional bicycle into a hybrid e-bike, Superpedestrian has shifted its focus to shared micromobility. <a
+      href="https://www.superpedestrian.com/en/press">We are developing a durable scooter for ridesharing along with server-side infrastructure to support fleets of any size.</a>
     </p>
       <MapView
         features={features}
@@ -38,6 +40,7 @@ const AboutSP = (props) => {
     <div className="bottom-buttons">
       <Link to={'/aboutme'} className="nes-btn" type="button">About Ian Schwartz</Link>
     </div>
+    <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/aboutSP.js"/>
   </div>)
 };
 export default AboutSP;

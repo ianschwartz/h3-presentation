@@ -1,6 +1,7 @@
 import React from 'react';
 import maddie from '../images/maddie.jpg';
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 const Aboutme = (props) => {
   return(<div className="nes-container with-title is-dark">
     <h2 className="title">About Ian Schwartz</h2>
@@ -25,6 +26,7 @@ const Aboutme = (props) => {
         <img src={maddie} alt=""/>
       </div>
     </div>
+    <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/aboutme.js"/>
   </div>)
 };
 export default Aboutme;

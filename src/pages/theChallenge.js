@@ -6,6 +6,7 @@ import coin from '../images/coin.png';
 import chlMap from '../images/example-chloropleth.png';
 import * as L from 'leaflet';
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 const formatFeatures = (lights) => {
   return lights.map(light => {
@@ -68,6 +69,7 @@ class TheChallenge extends Component {
           <button className="nes-btn is-error">Go back</button>
         </div>
       </MapView>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/theChallenge.js"/>
     </div>)
   }
 };

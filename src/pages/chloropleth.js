@@ -4,6 +4,7 @@ import * as L from 'leaflet';
 import h3 from 'h3-js';
 import {bucketLights, getColor} from "../services/services";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 const code = `const bucketLights = data => data.reduce((obj, item) => {
   const hex = h3.geoToH3(item.latlng[0], item.latlng[1], 8);
@@ -80,13 +81,14 @@ export default class Chloropleth extends React.Component {
             </pre>
           </div>
         </div>
-        <div
-          className="bottom-buttons"
-         style={{ background: 'darkgreen', color: 'white', padding: 10 }}
-        >
-          <Link className="nes-btn" to={'/collision-detection'}>next</Link>
-        </div>
       </MapView>
+      <div
+        className="bottom-buttons"
+        style={{ background: 'darkgreen', color: 'white' }}
+      >
+        <Link className="nes-btn bottom-buttons" to={'/collision-detection'}>next</Link>
+      </div>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/chloropleth.js" />
     </div>)
   }
 }

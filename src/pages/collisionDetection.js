@@ -5,6 +5,7 @@ import Link from "../components/nav/link";
 import geojson from '../data/mass.json'
 import h3 from 'h3-js';
 import koopa from "../images/koopa.gif";
+import {CodeLink} from "../components/codeLink";
 
 const mass = L.geoJSON(geojson)
 const hexes = h3.polyfill(geojson.features[0].geometry.coordinates, 6);
@@ -124,6 +125,7 @@ class CollisionDetection extends Component {
           </label>
         </div>
       </div>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/collisionDetection.js"/>
     </div>)
   }
 };

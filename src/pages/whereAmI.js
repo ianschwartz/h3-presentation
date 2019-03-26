@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import MapView from "../components/map/mapView";
 import * as L from "leaflet";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 const formatText = (text = "") => {
   return text.split(',').map(line => <div>{line}</div>)
@@ -66,6 +67,7 @@ class WhereAmI extends Component {
       <MapView
         features={[this.locationLayer]}
       />}
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/whereAmI.js"/>
     </div>)
   }
 };

@@ -6,6 +6,7 @@ import coin from "../images/coin.png";
 import invertedCoin from "../images/invertedCoin.png";
 import MapView from "../components/map/mapView";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 export default class PointInPolygon extends React.Component {
   state = {
@@ -51,8 +52,8 @@ export default class PointInPolygon extends React.Component {
         <pre><code>const hexIsSelected = this.state.hexes.includes(hex)</code></pre>
         <small>polygon controls courtesy of <a href="https://github.com/codeofsumit/leaflet.pm" target='_blank'>leaflet.pm</a></small><br />
         <Link to='/routing' className='nes-btn'>next</Link>
-
       </div>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/pointInPolygon.js"/>
     </div>
   }
 }

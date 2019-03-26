@@ -6,6 +6,7 @@ import coin from "../images/coin.png";
 import invertedCoin from "../images/invertedCoin.png";
 import MapView from "../components/map/mapView";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 export default class Compact extends React.Component {
   state = {
@@ -35,8 +36,8 @@ export default class Compact extends React.Component {
       <div className='nes-container' style={{ textAlign: 'left' }}>
         Compact a set of hexagons of the same resolution into a set of hexagons across multiple levels that represents the same area.<br />
         <Link to='/the-end' className='nes-btn'>next</Link>
-
       </div>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/compact.js"/>
     </div>
   }
 }

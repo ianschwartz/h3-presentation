@@ -4,6 +4,7 @@ import 'leaflet.pm'
 import * as L from "leaflet";
 import MapView from "../components/map/mapView";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 export default class H3Line extends React.Component {
   state = {
@@ -50,6 +51,7 @@ export default class H3Line extends React.Component {
       {myHex}<br />
       Given two H3 indexes, return the line of indexes between them (inclusive)
       <Link className="nes-btn" to="/compact">next</Link>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/h3line.js"/>
     </div>
   }
 }

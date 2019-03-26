@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "../components/nav/link";
+import {CodeLink} from "../components/codeLink";
 
 export class WhyHexes extends React.Component {
   render() {
@@ -27,6 +28,7 @@ export class WhyHexes extends React.Component {
         <img src="https://catlikecoding.com/unity/tutorials/hex-map/part-1/about-hexagons/square-grid.png" alt="square-grid"/>
         <img src="https://catlikecoding.com/unity/tutorials/hex-map/part-1/about-hexagons/hexagon-grid.png" alt=""/>
       </div>
+      <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/whyHexes.js"/>
     </div>)
   }
 }

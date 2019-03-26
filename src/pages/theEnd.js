@@ -15,27 +15,27 @@ export class TheEnd extends React.Component {
           <h3>a schwartz.world production</h3>
           <p>
             css:<br />
-            <a href="https://nostalgic-css.github.io/NES.css/">https://nostalgic-css.github.io/NES.css/</a>
+            <a href="https://nostalgic-css.github.io/NES.css/">https://nostalgic-css.github.io/NES.css/</a>;
           </p>
           <p>
             h3 js bindinds:<br />
-            <a href="https://github.com/uber/h3-js">https://github.com/uber/h3-js</a>
+            <a href="https://github.com/uber/h3-js">https://github.com/uber/h3-js</a>;
           </p>
           <p>
             map library<br />
-            <a href="https://leafletjs.com/">https://leafletjs.com/</a>
+            <a href="https://leafletjs.com/">https://leafletjs.com/</a>;
           </p>
           <p>
             editable maps:<br />
-            <a href="https://github.com/codeofsumit/leaflet.pm">https://github.com/codeofsumit/leaflet.pm</a>
+            <a href="https://github.com/codeofsumit/leaflet.pm">https://github.com/codeofsumit/leaflet.pm</a>;
           </p>
           <p>
             moral support:<br />
-            maddie the greyhound
+            maddie the greyhound;
           </p>
           <p>
             semicolons:<br />
-            encouraged
+            encouraged;
           </p>
           <p>
             <h3>Special thanks to:</h3>
