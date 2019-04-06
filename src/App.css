@@ -103,20 +103,18 @@ pre {
   /* Making sure the text is fully off the screen at the start and end of the animation */
   /* Defines the skew origin at the very center when we apply transforms on the animation */
   transform-origin: 50% 100%;
-  animation: crawl 300s linear;
+  animation: crawl 180s linear;
 }
 @keyframes crawl {
   0% {
     /* The element starts below the screen */
-    top: 0;
+    top: 1200px;
     /* Rotate the text 20 degrees but keep it close to the viewer */
-    transform: rotateX(20deg) translateZ(0);
   }
   100% {
     /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
-    top: -6000px;
+    top: -3000px;
     /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
-    transform: rotateX(25deg) translateZ(-2500px);
   }
 }
 

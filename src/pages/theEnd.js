@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../images/logo.png'
 import Link from "../components/nav/link";
+import sponsers from "../images/BosCC31Sponsors.png";
 
 export class TheEnd extends React.Component {
   render() {
@@ -18,11 +19,11 @@ export class TheEnd extends React.Component {
             <a href="https://nostalgic-css.github.io/NES.css/">https://nostalgic-css.github.io/NES.css/</a>;
           </p>
           <p>
-            h3 js bindinds:<br />
+            h3 js bindings:<br />
             <a href="https://github.com/uber/h3-js">https://github.com/uber/h3-js</a>;
           </p>
           <p>
-            map library<br />
+            map library:<br />
             <a href="https://leafletjs.com/">https://leafletjs.com/</a>;
           </p>
           <p>
@@ -40,10 +41,11 @@ export class TheEnd extends React.Component {
           <p>
             <h3>Special thanks to:</h3>
             <ul>
-              <li>bostonjs</li>
-              <li>google</li>
+              <li>uber engineering</li>
               <li>caffeine</li>
+              <li>boston code camp sponsors</li>
             </ul>
+            <img src={sponsers} alt=""/>
           </p>
           <p>
             See something that could be improved?

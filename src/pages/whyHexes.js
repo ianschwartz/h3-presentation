@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "../components/nav/link";
 import {CodeLink} from "../components/codeLink";
+import hexGrid from "../images/hexagon-grid.png"
+import squareGrid from "../images/square-grid.png"
 
 export class WhyHexes extends React.Component {
   render() {
@@ -25,8 +27,8 @@ export class WhyHexes extends React.Component {
           <small>images courtesy of <a href="https://catlikecoding.com/unity/tutorials/hex-map/part-1/">catlikecoding.com</a></small><br />
           <Link to='/my-hex' className='nes-btn'>next</Link>
         </div>
-        <img src="https://catlikecoding.com/unity/tutorials/hex-map/part-1/about-hexagons/square-grid.png" alt="square-grid"/>
-        <img src="https://catlikecoding.com/unity/tutorials/hex-map/part-1/about-hexagons/hexagon-grid.png" alt=""/>
+        <img src={squareGrid} />
+        <img src={hexGrid} />
       </div>
       <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/whyHexes.js"/>
     </div>)

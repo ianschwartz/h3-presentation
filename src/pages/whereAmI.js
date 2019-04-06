@@ -21,8 +21,22 @@ class WhereAmI extends Component {
     const marker = L.marker([position.coords.latitude, position.coords.longitude]);
     marker.addTo(locLayer);
     this.locationLayer = locLayer;
+    const items = [
+      "Address: 5 Wayside Rd, Burlington, MA 01803",
+      "Name: Microsoft Sales & Technology Center",
+      "Event: Boston Code Camp",
+      "City, Stata: Boston, MA",
+      "Zip Code: 01803",
+      "Room: Monroe",
+      "Country: USA",
+      "Hemisphere: Western",
+      "Planet: Earth",
+      "Galaxy: Milky Way",
+      "Reality: Earth-1218",
+      "geojson"
+    ]
     this.setState({
-      location: locString,
+      listItems: [locString, ...items],
       geoJSON: JSON.stringify(marker.toGeoJSON(), null, 2),
     })
   });
@@ -43,10 +57,10 @@ class WhereAmI extends Component {
   };
 
   render() {
-    if (!this.state.location) {
+    if (this.state.listItems.length < 1) {
       this.getLocation();
     }
-    const style = { border: '4px solid red', margin: 2 }
+    const style = { border: '4px solid red', margin: 2, padding: 5 }
     const listItems = this.state.listItems.map(item => {
       if (item.toLowerCase() === 'geojson') {
         return <li key={item} style={style}>{this.state.geoJSON}</li>
@@ -56,17 +70,23 @@ class WhereAmI extends Component {
     return (<div className="nes-container with-title" style={{ overflow: 'auto' }}>
       <h2 className="title">Where Am I?</h2>
       <h3>How do we talk about location?</h3>
-      <div className="container is-dark" style={{height: 30}}>{this.state.activeItem}</div>
-      <textarea onChange={this.handleChange} value={this.state.activeItem} name="input" className="nes-textarea"></textarea>
-      <ul style={{ width: 500, border: '4px solid black', margin: '20px auto' }} className="nes-list is-disc">
-        <li>{formatText(this.state.location)}</li>
-        {listItems}
-      </ul>
       <Link to='/why-hexes' className='nes-btn'>next</Link>
-      {this.locationLayer &&
-      <MapView
-        features={[this.locationLayer]}
-      />}
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <ul style={{
+          listStyle: 'none',
+          width: '40%',
+          margin: '20px auto',
+          textAlign: 'left',
+        }}>
+          {listItems}
+        </ul>
+        {this.locationLayer &&
+        <div style={{ width: '50%' }}>
+          <MapView
+            features={[this.locationLayer]}
+          />
+        </div>}
+      </div>
       <CodeLink url="https://github.com/ianschwartz/h3-presentation/blob/master/src/pages/whereAmI.js"/>
     </div>)
   }

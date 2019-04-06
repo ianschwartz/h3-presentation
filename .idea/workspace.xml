@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7febbb3-ea8d-4d1a-9c81-dd350b4659c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/aboutSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/aboutSP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/aboutme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/aboutme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/myHex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/myHex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/theChallenge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/theChallenge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/theEnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/theEnd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/whereAmI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/whereAmI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/whyHexes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/whyHexes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,55 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/compact.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/whereAmI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="100" selection-start-line="39" selection-start-column="100" selection-end-line="39" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/aboutSP.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="29" column="175" selection-start-line="29" selection-start-column="175" selection-end-line="29" selection-end-column="175" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/aboutme.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/theChallenge.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+            <state relative-caret-position="296">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -77,10 +29,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/notFound.js">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="491">
+              <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -88,20 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/whyHexes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="465">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -110,10 +50,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/myHex.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/theEnd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,10 +62,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="123" column="15" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -177,10 +117,8 @@
         <option value="$PROJECT_DIR$/src/data/mass.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/map/mapView.js" />
-        <option value="$PROJECT_DIR$/src/pages/theEnd.js" />
         <option value="$PROJECT_DIR$/src/components/qrCode.js" />
         <option value="$PROJECT_DIR$/src/components/codeLink.js" />
-        <option value="$PROJECT_DIR$/src/pages/whereAmI.js" />
         <option value="$PROJECT_DIR$/src/pages/chloropleth.js" />
         <option value="$PROJECT_DIR$/src/pages/collisionDetection.js" />
         <option value="$PROJECT_DIR$/src/pages/pointInPolygon.js" />
@@ -189,11 +127,13 @@
         <option value="$PROJECT_DIR$/src/pages/aboutSP.js" />
         <option value="$PROJECT_DIR$/src/pages/home.js" />
         <option value="$PROJECT_DIR$/src/pages/aboutme.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/pages/theChallenge.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/pages/myHex.js" />
+        <option value="$PROJECT_DIR$/src/pages/whereAmI.js" />
         <option value="$PROJECT_DIR$/src/pages/whyHexes.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/pages/theEnd.js" />
       </list>
     </option>
   </component>
@@ -329,18 +269,19 @@
       <workItem from="1553111650512" duration="3341000" />
       <workItem from="1553176292033" duration="465000" />
       <workItem from="1553543026569" duration="7111000" />
-      <workItem from="1553633121678" duration="379000" />
+      <workItem from="1553633121678" duration="1039000" />
+      <workItem from="1554477693522" duration="2184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60653000" />
+    <option name="totallyTimeSpent" value="63497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1200" height="1920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41968912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4265976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,13 +333,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/react-enroute/build/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/nav/link.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -518,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/theEnd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/pointInPolygon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -541,16 +468,6 @@
           <caret line="53" column="99" selection-start-line="53" selection-start-column="99" selection-end-line="53" selection-end-column="99" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/whereAmI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="69" column="101" selection-start-line="69" selection-start-column="101" selection-end-line="69" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -577,8 +494,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/compact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="465">
           <caret line="39" column="100" selection-start-line="39" selection-start-column="100" selection-end-line="39" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/theChallenge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/notFound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/aboutme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -602,54 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/aboutme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="123" column="15" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/theChallenge.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/notFound.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/whyHexes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -658,8 +558,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/myHex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+        <state relative-caret-position="668">
+          <caret line="197" column="16" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/whereAmI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/whyHexes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/theEnd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="108" lean-forward="true" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
